@@ -17,3 +17,8 @@ b = temp
 # display the swapped values
 
 print(f"Swapped values: a = {a}, b = {b}")
+
+# without taking another variable
+# num1 = num1 + num2 
+# num2 = num1 - num2
+# num1 = num1 - num2
