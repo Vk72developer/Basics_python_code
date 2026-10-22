@@ -1,0 +1,19 @@
+# Electricity Bill with Slabs 
+# Compute an electricity bill: 
+#           first 100 units at Rs. 1.50/unit,  
+#           next 100 at Rs. 2.50/unit,
+#           next 100 at Rs. 4.00/unit,
+#           anything above 300 units at Rs. 6.00/unit 
+
+units = int(input("Enter units consumed: "))
+
+if units <= 100:
+    bill = units * 1.5
+elif units <= 200:
+    bill = 100 * 1.5 + (units - 100) * 2.5
+elif units <= 300:
+    bill = 100 * 1.5 + 100 * 2.5 + (units - 200) * 4.0 
+else:
+    bill = 100 * 1.5 + 100 * 2.5 + 100 * 4.0 + (units - 300) * 6.0
+
+print(f"Bill for {units} units = Rs. {bill:.2f}")
